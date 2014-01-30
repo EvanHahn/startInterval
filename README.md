@@ -8,4 +8,4 @@ Without `startInterval`:
 
 With `startInterval`:
 
-    `startInterval(myFunction, 1000);`
+    startInterval(myFunction, 1000);
