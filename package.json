@@ -1,7 +1,7 @@
 {
   "name": "startinterval",
   "author": "Evan Hahn <me@evanhahn.com> (http://evanhahn.com)",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "main": "index.js",
   "repository": {
     "type": "git",
