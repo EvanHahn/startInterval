@@ -5,6 +5,4 @@ function startInterval(fn) {
 
 if (typeof module !== 'undefined') {
 	module.exports = startInterval;
-} else {
-	this.startInterval = startInterval;
 }
