@@ -8,5 +8,13 @@
     "url": "https://github.com/EvanHahn/startInterval.git"
   },
   "bugs": "https://github.com/EvanHahn/startInterval/issues",
-  "license": "WTFPL"
+  "license": "WTFPL",
+  "scripts": {
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "chai": "1.9.x",
+    "sinon": "1.9.x",
+    "mocha": "1.17.x"
+  }
 }
