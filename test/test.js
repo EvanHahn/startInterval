@@ -1,21 +1,37 @@
-// First, we require `expect` from Chai.
 var chai = require('chai');
 var expect = chai.expect;
+var sinon = require('sinon');
+var startInterval = require('..');
 
-// `describe` makes a "suite" of tests; think of them as a group.
-describe('fake suite of tests', function() {
+describe('startInterval', function() {
 
-  // The tests have an English description...
-  it('has 2 equal to be greater than 0', function() {
-
-    // ...and a code assertion.
-    expect(2).to.be.above(0);
-
+  var fn, clock;
+  beforeEach(function() {
+    fn = sinon.spy();
+    clock = sinon.useFakeTimers();
   });
 
-  // You can have multiple tests in a suite.
-  it('has 1 equal to 1', function() {
-    expect(1).to.equal(1);
+  var interval;
+  afterEach(function() {
+    clearInterval(interval);
+    clock.restore();
+  });
+
+  it('calls the function immediately', function() {
+    interval = startInterval(fn, 1000);
+    expect(fn.calledOnce).to.be.true;
+  });
+
+  it('calls the function many times over time', function() {
+    interval = startInterval(fn, 100);
+    clock.tick(99);
+    expect(fn.callCount).to.equal(1);
+    clock.tick(2);
+    expect(fn.callCount).to.equal(2);
+    clock.tick(100);
+    expect(fn.callCount).to.equal(3);
+    clock.tick(100);
+    expect(fn.callCount).to.equal(4);
   });
 
 });
