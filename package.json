@@ -9,7 +9,7 @@
     "url": "https://github.com/EvanHahn/startInterval.git"
   },
   "bugs": "https://github.com/EvanHahn/startInterval/issues",
-  "license": "WTFPL",
+  "license": "Unlicense",
   "scripts": {
     "test": "mocha"
   },
