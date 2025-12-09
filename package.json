@@ -2,7 +2,7 @@
   "name": "startinterval",
   "description": "setInterval that starts immediately",
   "author": "Evan Hahn <me@evanhahn.com> (https://evanhahn.com)",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "main": "index.js",
   "type": "module",
   "homepage": "https://codeberg.org/EvanHahn/startInterval",
