@@ -11,11 +11,6 @@
   "bugs": "https://github.com/EvanHahn/startInterval/issues",
   "license": "Unlicense",
   "scripts": {
-    "test": "mocha"
-  },
-  "devDependencies": {
-    "chai": "1.9.x",
-    "sinon": "1.9.x",
-    "mocha": "1.17.x"
+    "test": "node --test"
   }
 }
