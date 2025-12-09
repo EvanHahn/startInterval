@@ -1,4 +1,4 @@
-startInterval [![](https://travis-ci.org/EvanHahn/startInterval.png?branch=master)](https://travis-ci.org/EvanHahn/startInterval)
+startInterval
 =============
 
 Without `startInterval`:
