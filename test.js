@@ -1,6 +1,6 @@
-const { test, beforeEach, afterEach, mock } = require("node:test");
-const assert = require("node:assert").strict;
-const startInterval = require(".");
+import assert from "node:assert/strict";
+import { afterEach, beforeEach, mock, test } from "node:test";
+import startInterval from "./index.js";
 
 beforeEach(() => {
   mock.timers.enable();

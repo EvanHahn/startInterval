@@ -4,6 +4,7 @@
   "author": "Evan Hahn <me@evanhahn.com> (http://evanhahn.com)",
   "version": "1.0.1",
   "main": "index.js",
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "https://github.com/EvanHahn/startInterval.git"
