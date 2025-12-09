@@ -5,11 +5,12 @@
   "version": "1.0.1",
   "main": "index.js",
   "type": "module",
+  "homepage": "https://codeberg.org/EvanHahn/startInterval",
   "repository": {
     "type": "git",
-    "url": "https://github.com/EvanHahn/startInterval.git"
+    "url": "https://codeberg.org/EvanHahn/startInterval.git"
   },
-  "bugs": "https://github.com/EvanHahn/startInterval/issues",
+  "bugs": "https://codeberg.org/EvanHahn/startInterval/issues",
   "license": "Unlicense",
   "scripts": {
     "test": "node --test"
