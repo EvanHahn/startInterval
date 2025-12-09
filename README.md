@@ -10,6 +10,7 @@ myFunction();
 With `startInterval`:
 
 ```javascript
+import startInterval from "startinterval";
 startInterval(myFunction, 1000);
 ```
 
